@@ -11,18 +11,77 @@ body{
     color: $primary-color;
     margin: 0;
     padding: 0;
+    font-size: 10pt;
     background-color: $background-color;
+}
+
+h2{
+    font-size: 10pt;
+    text-transform: uppercase;
+    border-bottom: 1px solid $primary-color;
+    margin: 5px 0 1px 0px;
+    padding-bottom: 2px;
 }
 
 .resume-container{
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
-    padding: 40px;
+    padding: 25px;
 }
 
 header{
     text-align: center;
-    border-bottom: 2px solid $accent-color;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    h1{
+        font-size: 16pt;
+        margin: 0 0 0pt 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .contact{
+        font-size: 10pt;
+    }
+}
+
+.entry{
+    margin-bottom: 2px;
+}
+
+.sub-entry{
+    margin-bottom: 2px;
+}
+
+.header-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.right{
+    white-space: nowrap;
+}
+
+a{
+    color: $primary-color;
+    text-decoration: none;
+    font-style: italic;
+}
+
+ul{
+    margin: 2px 0 8px 0;
+    padding-left: 20px;
+
+    li{
+        margin-bottom: 2px;;
+    }
+}
+
+.job-block, section{
+    break-inside: avoid;
 }

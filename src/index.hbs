@@ -1,35 +1,88 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Toheed Asghar</title>
-</head>
-<body>
+  </head>
+  <body>
 
     <div class="resume-container">
-        <header>
-            <h1>{{personaInfo.name}}</h1>
-            <div class="contact">
-                <span>{{personalInfo.email}}</span> |
-                <span>{{personalInfo.github}}</span> |
-                <span>{{personalInfo.linkedin}}</span>
-            </div>
-        </header>
-    </div>
-
-    <section>
-        <h2>Professional Summary</h2>
-        <span>{{professionalSummary.Summary}}</span>
-    </section>
-
-    <section>
-        <h1>Professional Experience</h1>
-        <div class="job-block">
-            
+      <header>
+        <h1>{{personalInfo.name}}</h1>
+        <div class="contact">
+          <span>{{personalInfo.email}}</span>
+          |
+          <span>{{personalInfo.github}}</span>
+          |
+          <span>{{personalInfo.linkedin}}</span>
         </div>
-    </section>
-    
-    
-</body>
+      </header>
+
+      <section>
+        <h2>Professional Summary</h2>
+        <span>{{professionalSummary.summary}}</span>
+      </section>
+
+      <section>
+        <h2>Professional Experience</h2>
+        {{#each professionalExperience}}
+          <div class="job-block">
+            <div class="entry header-row">
+              <span><span class="bold">{{company}}</span>, {{role}}</span>
+              <span class="right">{{date}}</span>
+            </div>
+            <ul>
+              {{#each description}}
+                <li>{{this}}</li>
+              {{/each}}
+            </ul>
+          </div>
+        {{/each}}
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <div class="entry header-row">
+          <span class="bold">{{education.university}}</span>,
+          {{education.degree}}
+          <span class="right">{{education.date}}</span>
+        </div>
+        <div class="sub-entry">CGPA: {{education.cgpa}}</div>
+      </section>
+
+      <section>
+        <h2>Projects</h2>
+        {{#each projects}}
+          <div class="projects">
+            <div class="entry header-row">
+              <span>
+                <span class="bold">{{name}}</span>
+                |
+                <a href={{link}}>Link</a>
+              </span>
+            </div>
+            <ul>
+              {{#each description}}
+                <li>{{this}}</li>
+              {{/each}}
+            </ul>
+          </div>
+        {{/each}}
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <div class="skills-section">
+          <ul>
+            {{#each skills}}
+              <li>
+                <strong>{{category}}: </strong>
+                {{items}}
+              </li>
+            {{/each}}
+          </ul>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>

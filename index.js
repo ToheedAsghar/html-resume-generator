@@ -46,7 +46,7 @@ const resumeData = require('./src/data.js');
             await page.pdf({
                 path: outputPath,
                 format: 'A4',
-                printBackground: 'true',
+                printBackground: true,
                 margin: {
                     top: '10mm',
                     bottom: '10mm',
@@ -58,6 +58,6 @@ const resumeData = require('./src/data.js');
             await browser.close();
             console.log(`Success! resume saved at ${outputPath}`);
         } catch(error){
-            console.log('error generating resume');
+            console.error('error generating resume:', error);
         }
     })();

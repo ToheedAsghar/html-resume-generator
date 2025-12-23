@@ -9,7 +9,7 @@ module.exports = {
         linkedin: "linkedin.com/in/toheed-asghar"
     },
     education: {
-        university: "Punjab University College of Information Technlogy (PUCIT)",
+        university: "Punjab University College of Information Technology (PUCIT)",
         degree: "BSCS",
         date: "2021 - 2025",
         cgpa: 3.5
@@ -21,12 +21,12 @@ module.exports = {
             date: "Oct 2025 - Present",
             description: [
                 "Currently in training and contributing to ALM, and PFT project",
-                "Working with basic ETL Tasks and gaining familarity with dataflows, data warehousing, and financial risk modules."
+                "Working with basic ETL Tasks and gaining familiarity with dataflows, data warehousing, and financial risk modules."
             ]
         },
         {
             company: "Revolving Games",
-            role: "Full Stack Developerc",
+            role: "Full Stack Developer",
             date: "July 2025 - Sept 2025",
             description: [
                 "Built features in production apps using React (frontend), Redux Toolkit (RTK) for state management, and Sequelize as ORM, gained exposure to Express.js on the backend.",
@@ -71,12 +71,12 @@ module.exports = {
             ]
         }
     ],
-    skills: {
-        programmingLanguages: "C, C++, C#, Python, Javascript",
-        frontend: "React, Redux Toolkit (RTK), Tailwind CSS, SCSS, HTML/CSS, Bootstrap",
-        backend: "Express.js , ASP.NET Core, Entity Framework",
-        databases: "SQL Server, Oracle SQL, Sequelize",
-        tools: "Git, Github, Docker, Visual Studio, Vscode, Pycharm",
-        additional: "Angular (Basic Exposure"
-    }
+    skills: [
+    { category: "Programming Languages", items: "C, C++, C#, Python, Javascript" },
+    { category: "Frontend", items: "React, Redux Toolkit (RTK), Tailwind CSS, SCSS, HTML/CSS, Bootstrap" },
+    { category: "Backend", items: "Express.js, ASP.NET Core, Entity Framework" },
+    { category: "Databases", items: "SQL Server, Oracle SQL, Sequelize" },
+    { category: "Tools", items: "Git, Github, Docker, Visual Studio, Vscode, Pycharm" },
+    { category: "Additional", items: "Angular (Basic Exposure)" }
+]
 }
