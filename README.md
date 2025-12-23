@@ -2,6 +2,8 @@
 
 A professional, automated resume generator that converts HTML templates into high-quality PDF documents using Handlebars templating, SCSS styling, and Puppeteer.
 
+<img width="2483" height="3509" alt="resume" src="https://github.com/user-attachments/assets/8d457cec-f612-4916-b784-bf38657efa4e" />
+
 ## Features
 
 - **Template-Based**: Use Handlebars templates for easy content management
