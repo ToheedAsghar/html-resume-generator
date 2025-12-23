@@ -28,6 +28,11 @@ cd html-resume-generator
 npm install
 ```
 
+3. Install Chrome for Puppeteer:
+```bash
+npx puppeteer browsers install chrome
+```
+
 ## Usage
 
 1. **Edit Your Resume Data**: 
@@ -42,6 +47,11 @@ npm install
 4. **Generate PDF**:
 ```bash
 npm start
+```
+
+Or run directly:
+```bash
+node index.js
 ```
 
 Your resume will be generated as `output/resume.pdf`.
@@ -116,6 +126,10 @@ await page.pdf({
 
 ### Common Issues
 
+**Error: "Could not find Chrome"**
+- Run: `npx puppeteer browsers install chrome`
+- This installs the Chrome binary needed by Puppeteer
+
 **Error: "Failed to deserialize params.printBackground"**
 - Ensure `printBackground` is set to `true` (boolean), not `'true'` (string) or `1` (number)
 
@@ -125,6 +139,7 @@ await page.pdf({
 **PDF not generating**
 - Ensure the `output/` directory exists (created automatically)
 - Check that all dependencies are installed
+- Verify Chrome is installed: `npx puppeteer browsers list`
 
 ## License
 
