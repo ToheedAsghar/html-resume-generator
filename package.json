@@ -1,14 +1,15 @@
 {
-  "name": "html_resume_project",
+  "name": "html-resume-generator",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["resume", "pdf", "generator", "handlebars", "puppeteer", "cv"],
+  "author": "Toheed Asghar <toheedasghar@hotmail.com>",
   "license": "ISC",
-  "description": "",
+  "description": "A professional resume generator that converts HTML templates to PDF using Handlebars, SCSS, and Puppeteer",
   "dependencies": {
     "handlebars": "^4.7.8",
     "puppeteer": "^24.34.0",
