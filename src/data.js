@@ -10,7 +10,7 @@ module.exports = {
     },
     education: {
         university: "Punjab University College of Information Technology (PUCIT)",
-        degree: "BSCS",
+        degree: "Bachelor of Science in Computer Science",
         date: "2021 - 2025",
         cgpa: 3.5
     },
