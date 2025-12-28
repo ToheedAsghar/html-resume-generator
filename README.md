@@ -133,7 +133,7 @@ await page.pdf({
 
 ### Common Issues
 
-**Error: "Could not find Chrome"**
+#### Error: "Could not find Chrome"
 - Run: `npx puppeteer browsers install chrome`
 - This installs the Chrome binary needed by Puppeteer
 
