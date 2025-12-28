@@ -1,5 +1,7 @@
 # HTML Resume Generator
 
+![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/ToheedAsghar/html-resume-generator?utm_source=oss&utm_medium=github&utm_campaign=ToheedAsghar%2Fhtml-resume-generator&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)
+
 A professional, automated resume generator that converts HTML templates into high-quality PDF documents using Handlebars templating, SCSS styling, and Puppeteer.
 
 <img width="2483" height="3509" alt="resume" src="https://github.com/user-attachments/assets/8d457cec-f612-4916-b784-bf38657efa4e" />
